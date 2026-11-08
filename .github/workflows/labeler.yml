@@ -18,7 +18,8 @@
 #
 
 name: "Pull Request Labeler"
-on: pull_request_target # zizmor: ignore[dangerous-triggers]
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on: pull_request_target # zizmor: ignore[dangerous-triggers]
 
 permissions:
   contents: read

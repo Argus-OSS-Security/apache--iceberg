@@ -18,20 +18,21 @@
 #
 
 name: "Open-API"
-on:
-  push:
-    branches:
-      - 'main'
-      - '0.*'
-      - '1.*'
-      - '2.*'
-    tags:
-      - 'apache-iceberg-**'
-  pull_request:
-    paths:
-      - '.github/workflows/open-api.yml'
-      - 'open-api/**'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - 'main'
+#       - '0.*'
+#       - '1.*'
+#       - '2.*'
+#     tags:
+#       - 'apache-iceberg-**'
+#   pull_request:
+#     paths:
+#       - '.github/workflows/open-api.yml'
+#       - 'open-api/**'
+# 
 permissions:
   contents: read
 

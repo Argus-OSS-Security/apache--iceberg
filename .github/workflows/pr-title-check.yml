@@ -16,10 +16,11 @@
 # under the License.
 name: PR Title Check
 
-on:
-  pull_request:
-    types: [opened, edited, reopened, synchronize]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     types: [opened, edited, reopened, synchronize]
+# 
 concurrency:
   group: pr-title-${{ github.event.pull_request.number }}
   cancel-in-progress: true

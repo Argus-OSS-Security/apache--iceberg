@@ -23,12 +23,13 @@
 # See https://github.com/apache/infrastructure-actions/issues/574
 name: "ASF Allowlist Check"
 
-on:
-  pull_request:
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   push:
+#     branches:
+#       - main
+# 
 permissions:
   contents: read
 

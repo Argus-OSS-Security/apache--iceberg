@@ -19,12 +19,13 @@
 
 name: GitHub Actions Security Analysis with zizmor 🌈
 
-on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["**"]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: ["main"]
+#   pull_request:
+#     branches: ["**"]
+# 
 permissions: {}
 
 concurrency:

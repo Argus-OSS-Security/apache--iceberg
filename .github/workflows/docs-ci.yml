@@ -17,14 +17,15 @@
 # under the License.
 #
 name: Docs Build CI
-on:
-  pull_request:
-    paths:
-      - docs/**
-      - site/**
-      - format/**
-      - .github/workflows/docs-ci.yml
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths:
+#       - docs/**
+#       - site/**
+#       - format/**
+#       - .github/workflows/docs-ci.yml
+# 
 permissions:
   contents: read
 

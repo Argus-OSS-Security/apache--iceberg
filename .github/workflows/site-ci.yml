@@ -17,16 +17,17 @@
 # under the License.
 #
 name: site-ci 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - docs/**
-      - site/**
-      - format/**
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - docs/**
+#       - site/**
+#       - format/**
+#   workflow_dispatch:
+# 
 permissions:
   contents: read
 

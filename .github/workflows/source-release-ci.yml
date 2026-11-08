@@ -18,37 +18,38 @@
 #
 
 name: "Source Release CI"
-on:
-  push:
-    branches:
-    - 'main'
-    - '0.*'
-    - '1.*'
-    - '2.*'
-    paths:
-    - '.gitattributes'
-    - '.github/workflows/source-release-ci.yml'
-    - 'build.gradle'
-    - 'dev/source-release.sh'
-    - 'gradle.properties'
-    - 'gradle/**'
-    - 'gradlew'
-    - 'settings.gradle'
-    - '**/*.gradle'
-    - '**/*.gradle.kts'
-  pull_request:
-    paths:
-    - '.gitattributes'
-    - '.github/workflows/source-release-ci.yml'
-    - 'build.gradle'
-    - 'dev/source-release.sh'
-    - 'gradle.properties'
-    - 'gradle/**'
-    - 'gradlew'
-    - 'settings.gradle'
-    - '**/*.gradle'
-    - '**/*.gradle.kts'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#     - 'main'
+#     - '0.*'
+#     - '1.*'
+#     - '2.*'
+#     paths:
+#     - '.gitattributes'
+#     - '.github/workflows/source-release-ci.yml'
+#     - 'build.gradle'
+#     - 'dev/source-release.sh'
+#     - 'gradle.properties'
+#     - 'gradle/**'
+#     - 'gradlew'
+#     - 'settings.gradle'
+#     - '**/*.gradle'
+#     - '**/*.gradle.kts'
+#   pull_request:
+#     paths:
+#     - '.gitattributes'
+#     - '.github/workflows/source-release-ci.yml'
+#     - 'build.gradle'
+#     - 'dev/source-release.sh'
+#     - 'gradle.properties'
+#     - 'gradle/**'
+#     - 'gradlew'
+#     - 'settings.gradle'
+#     - '**/*.gradle'
+#     - '**/*.gradle.kts'
+# 
 permissions:
   contents: read
 
